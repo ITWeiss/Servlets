@@ -19,7 +19,7 @@ public class GreetingServlets extends HttpServlet {
         if (req.getParameter("name") == null) {
             resp.getWriter().println("Hello, guest!");
         } else {
-            resp.getWriter().println("Hello " + req.getParameter("name"));
+            resp.getWriter().println("Hello, " + req.getParameter("name") + "!");
         }
     }
 }
